@@ -4,6 +4,8 @@
 extern int compare(int val, int guess);
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
 	int val;
@@ -26,4 +28,5 @@ int main() {
 			printf("Enter a number : ");
 			scanf("%d", &guess);
 	}
+	printf("Great ! You got it !");
 }
