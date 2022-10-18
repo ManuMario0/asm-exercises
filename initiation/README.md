@@ -61,19 +61,21 @@ to precise the size of the data, here a byte. The suffix are :
 - q : 8 bytes - stands for quad word
 
 The registers also follows there own convention, but it's more subtile.
-6                             3               1
-4                             2               6       8
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-| %rax                        | %eax          | %ax   | %al   |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+	6                             3               1
+	4                             2               6       8
+	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	| %rax                        | %eax          | %ax   | %al   |
+	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 And follow the same ideas for the %rbx, %rcx, %rdx, %rsi, %rdi, %rdi, %rbp.
 For the %r- registers, it's much more easier because they follow the same convention as the intructions :
-6                             3               1
-4                             2               6       8
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-| %r-                         | %r-d          | %r-w  | %r-b  |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+	6                             3               1
+	4                             2               6       8
+	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	| %r-                         | %r-d          | %r-w  | %r-b  |
+	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 # Register use
 Most registers have special uses. We will start slowly starting with the ones you should be the most carefull with.
@@ -146,5 +148,3 @@ Lets go with some basics :
 	6. le : less or equal
 - jmp : jump to the label
 - call : function call (when you use this function, you should always return and it will come back to the next instruction)
-
-Now use those functions on the next problems of the initiation part !
