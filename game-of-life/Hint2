@@ -1,0 +1,4 @@
+When you want to update a sell, you might want to use the old value later.
+To do it without using a brand new table, you can store the next state in the second byte.
+For example, if your cell is alive (0b00000001), then if it stills alive in the next stage, you can update this value in 0b00000011.
+So when you've updated all the values in the table, you can juste parse it and shift each elements to the right.
