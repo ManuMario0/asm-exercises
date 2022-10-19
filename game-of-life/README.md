@@ -15,15 +15,15 @@ The game of life simulate the life of small 2D cells living in a grid. The rules
 We call adjacent cells the ones which are next to each other either diagonaly or straitforward
 As an exemple the following grid :
 
-o o o x o
-x o o o x
-o x x x x
+	o o o x o
+	x o o o x
+	o x x x x
 
 will evolve in
 
-o o o o o
-o x o o x
-o x x x x
+	o o o o o
+	o x o o x
+	o x x x x
 
 ## STEP 2
 Now that you know the rules, you know what you need to do !
