@@ -1,0 +1,14 @@
+# Spoiler alert !
+I'll give some implementation helps here !!!!!
+
+Some of you I'm sure must have think of an algorithm of the form :
+well, if I store all of the nodes in an array, then I just have to insert them one by one, wwwweelllll, it's not bad but very tricky to do !
+If you want to stic to your idea, you can continure reading this help, else juste go to the next Hint !
+
+The main way to store bunk data is on the stack. You might have think of a recursive function which add them on the stack one by one.
+That could be a good idea if you didn't have to store extrat information for each call. This extrat information can't be store in registers (because
+they would be modified in the next call) neither on the stack because you don't want to messup with the data you're trying to store !
+
+The solution is to "allocate" some place on the stack. But the stricky part is, you HAVE to know the number of elements you want to put in the stack,
+so you have to count the number of nodes in the tree before doing anything. Then you should be able to create an algorithm preaty easily by playing with the
+%rsp register and %rbp register (just always remember to reset them to their old value when youre done !)

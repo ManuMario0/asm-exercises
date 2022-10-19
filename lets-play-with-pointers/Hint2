@@ -1,0 +1,2 @@
+In theory, you should always see an output on the screen when testing your program. If not, maybe you didn't set up
+the rax register (the return value) ?

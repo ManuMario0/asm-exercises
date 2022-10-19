@@ -23,15 +23,20 @@ Okay so this one is very tricky, but don't panic ! You can do it ! And if your s
 
 ## The structure used
 We will store each element of our tree in the following way :
+
 	0                   64                      128
 	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 	| value (integer)   | left child (pointer)  | right child (pointer) |
 	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
 There are no left (resp. right) if the pointer is NULL (= 0).
 
 ## The task
 You'll be given a tree. I want you to reorder the tree, conserving the root, so that it became a research binary tree.
-You're function should be called 'order' !
+
+Specifications :
+
+Your function should be called 'order'
 
 Input:
 - %rdi : pointer to the root of the tree

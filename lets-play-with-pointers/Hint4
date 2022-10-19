@@ -1,0 +1,8 @@
+# The way I did it (solution)
+
+The way I did it is very strait forward :
+- first I put the root in an empty register (%rsi for example) and store its to sons in others (you can even put them on the stack but it was not necessary so I didn't)
+- then for each son, I just go strait for the most left leaf, add it in the tree (my new tree is in %rsi) and then just come back and continue until your tree is empty
+
+The only thing is you have to make sure that the data your adding to your no tree have no children, you have to reset the value of teh children to 0 because it would mess up
+with the adding algorithm.

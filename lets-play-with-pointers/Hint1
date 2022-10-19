@@ -1,0 +1,13 @@
+# Here are some complements on pointers so you may be less lost
+## Pointer arithmetic
+When dealing with pointers, you some time operates directly on the adress like :
+
+	movb	5(%rdi), %rax
+
+But you always have to be carefull. Suppose you've got data of 8 bytes each (this is not a random value, this the size of the data in the structure of tree).
+Well if you want to access to the 2nd value, then you have to move the pointer of 8 byte, not juste one :
+
+	movq	8(%rdi), %rax
+
+And 16 bytes if you want to access the third element and so on. Just as a remarque, notice the fact the I changed the suffix.
+Always make sure you're using the right suffix, this can help you when debbuging !
