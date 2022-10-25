@@ -54,3 +54,6 @@ Hint : the command to compile a C file is :
 	$ gcc sourcefile -o output
 
 Great ! You know how to use a Makefile now !
+
+If You want to learn more about make, I can only advise you to take a look a this website : https://www.gnu.org/software/make/manual.
+This is in my opinio the most exostive and instructive tutorial on the internet (maybe because it was made by the creators of the software themselves ...).

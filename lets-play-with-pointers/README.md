@@ -2,7 +2,7 @@
 Welcome the show ! Here you'll learn to use pointers !
 
 # But wait, what is a pointer ?
-Well, good quesiton. A pointer is an adress ! This is exactly and only an adress !
+Well, good question. A pointer is an adress ! This is exactly and only an adress !
 
 "But how do I use it in assembly ?"
 
@@ -10,7 +10,7 @@ Suppose you've got the pointer to an integer in %rdi. To copy the value pointed 
 
 	movq	(%rdi), %rax
 
-So what you tell by putting parentethis is that you don't want the value in %rdi but the value in the memory location stored in %rdi !
+So what you tell by putting parentethis is that you don't want the value in %rdi but the value at the memory location stored in %rdi !
 Suppose now you've got a table of char (the size of 1 byte) and the location of the first element of the table is stored in %rdi. If you
 want to access to the 5th element of the table, you can just write :
 

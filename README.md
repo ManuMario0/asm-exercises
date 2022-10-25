@@ -10,11 +10,25 @@ But here, we will mainly code in assembly language for fun ! Coding efficient as
 You'll have to solve some problem or do some tasks. Each time, I'll give you the elements you'll need to solve the problem, don't worry.
 And if you're stuck, you can find some hints in each exercices ! Just read them in order so that you don't spoile yourself completly !
 
+## Submiting your tasks
+If you want me to check what you've done, you have to create a new branch (before editing anything) with :
+
+	$ git branch branch-name
+
+and then you have to switch to this new branch :
+
+	$ git switch branch-name
+
+Finally, you can put it online with :
+
+	$ git push --set-upstream
+
 # Initiation
 Those are kind of borring but unavoidable exercices to get a bit comfortable in ASM :
 - make
 - initiation
 - more-or-less
+- lets-play-with-pointers
 
 # Progression
 Here you'll find some fun exercices a bit more difficult but you'll not have to use very advence features of ASM.

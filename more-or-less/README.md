@@ -1,4 +1,4 @@
-# Great-or-less
+# More-or-less
 You certainly heard a bit about this game. This is a small game where you have to guess a number between 0 and 1000.
 Your task, should you choose to accept it, is to make a small function called 'compare' in assembly language to compare the value entered by the user and the value to guess.
 

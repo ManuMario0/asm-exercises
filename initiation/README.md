@@ -147,4 +147,4 @@ Lets go with some basics :
 	5. l : less
 	6. le : less or equal
 - jmp : jump to the label
-- call : function call (when you use this function, you should always return and it will come back to the next instruction)
+- call : function call (when you use this function, you should always return and it will come back to where you came from)
